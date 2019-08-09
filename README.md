@@ -1,6 +1,6 @@
 # SelectiveNet-Pytorch
 
-The author of paper uploaded code written in Keras, but I thought some people are familiar with Pytorch, so I implemented it in Pytorch.
+The author of paper has uploaded code written in Keras, but I thought some people are familiar with Pytorch, so I implemented it in Pytorch.
 
 ## Requirements
 
