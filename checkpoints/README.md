@@ -1,1 +1,1 @@
-Checkpoints will be saved here. 
+* Checkpoints will be saved here. 
