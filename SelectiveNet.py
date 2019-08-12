@@ -1,5 +1,5 @@
 """
-Created on Tue Aug 8 2019
+Created on Thu Aug 8, 2019
 @author: HyunsuKim6(Github), hyunsukim@kaist.ac.kr
 """
 
