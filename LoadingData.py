@@ -1,3 +1,8 @@
+"""
+Created on Tue Aug 8 2019
+@author: HyunsuKim6(Github), hyunsukim@kaist.ac.kr
+"""
+
 import torch
 import torchvision
 from torchvision import transforms
