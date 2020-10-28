@@ -101,10 +101,10 @@ def SelectiveNet_vgg16_bn(**kwargs):
 
 
 class OverAllLoss(nn.Module):
-    def __init__(self, alpha=0.5, lamda=32, coverage=0.7):
+    def __init__(self, alpha=0.5, lambda=32, coverage=0.7):
         super(OverAllLoss, self).__init__()
         self.alpha = alpha
-        self.lamda = lamda
+        self.lambda = lambda
         self.coverage = coverage
 
     def forward(self, prediction_input, selection_input, aux_input, labels):
@@ -118,7 +118,7 @@ class OverAllLoss(nn.Module):
 
         emp_coverage = selection_input.mean()
 
-        return self.alpha * (sel_risk / emp_coverage + self.lamda * max(self.coverage - emp_coverage, 0) ** 2) + (
+        return self.alpha * (sel_risk / emp_coverage + self.lambda * max(self.coverage - emp_coverage, 0) ** 2) + (
                     1 - self.alpha) * aux_loss \
             , sel_risk, emp_coverage
 
